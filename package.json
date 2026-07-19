@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Root orchestrator for EcoPilot AI",
   "scripts": {
-    "install-backend": "npm install --prefix backend",
-    "build": "npm install --prefix backend",
-    "start": "npm start --prefix backend"
+    "build": "cd backend && npm install",
+    "start": "cd backend && npm start"
   }
 }
