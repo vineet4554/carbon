@@ -39,7 +39,8 @@ app.use(cors({
     // Check if origin matches allowed list or regex
     const isAllowed = allowedOrigins.includes(origin) || 
                       /https:\/\/carbon-footprint-.*\.vercel\.app/.test(origin) ||
-                      /https:\/\/ecopliot-.*\.vercel\.app/.test(origin);
+                      /https:\/\/ecopliot-.*\.vercel\.app/.test(origin) ||
+                      /https:\/\/.*\.vercel\.app/.test(origin);
                       
     if (isAllowed) {
       callback(null, true);
