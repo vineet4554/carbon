@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Root orchestrator for EcoPilot AI",
   "scripts": {
+    "postinstall": "cd backend && npm install",
     "build": "cd backend && npm install",
     "start": "cd backend && npm start"
   }
